@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # YouTube Datatype Extension for eZ Publish 4.x
 
 This extension provides a YouTube datatype for eZ Publish 4.x.
@@ -31,4 +30,3 @@ eZ-Publish-4.x-YouTube-Datatype
 ===============================
 
 A datatype which can be used to include YouTube content in eZ Publish 4.x sites.
->>>>>>> 365dc789cd59836915f32c4d8f35117a9ff5c249
