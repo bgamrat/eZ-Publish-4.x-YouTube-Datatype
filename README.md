@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # YouTube Datatype Extension for eZ Publish 4.x
 
 This extension provides a YouTube datatype for eZ Publish 4.x.
@@ -25,3 +26,9 @@ In full view, the YouTube video is embedded in the page for viewing, with the de
 ## Limitations
 
 This datatype was developed under and tested with eZ Publish Community Project 2011.12, which is in the eZ Publish 4.x series.  It will not work with eZ Publish 5.x installations.
+=======
+eZ-Publish-4.x-YouTube-Datatype
+===============================
+
+A datatype which can be used to include YouTube content in eZ Publish 4.x sites.
+>>>>>>> 365dc789cd59836915f32c4d8f35117a9ff5c249
