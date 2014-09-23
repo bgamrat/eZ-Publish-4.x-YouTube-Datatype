@@ -86,7 +86,7 @@ class youtube extends eZImageType
                 return eZInputValidator::STATE_INVALID;
              }
 	}
-        if ( $header['content-length'] > ini_get('upload_max_filesize') )
+        if ( $header['content-length'] > self::return_bytes( ini_get('upload_max_filesize') ) )
         {
             $contentObjectAttribute->setValidationError( ezpI18n::tr( 'kernel/classes/datatypes',
                 'The size of the thumbnail image exceeds limit set by upload_max_filesize directive in php.ini. Please contact the site administrator.' ) );
@@ -155,6 +155,23 @@ class youtube extends eZImageType
     {
         return true;
     }
+    
+    static function return_bytes($val)
+    {
+        $val = trim($val);
+        $last = strtolower($val[strlen($val)-1]);
+        switch($last) 
+        {
+            case 'g':
+                $val *= 1024;
+            case 'm':
+                $val *= 1024;
+            case 'k':
+                $val *= 1024;
+        }
+        return $val;
+    }
+    
 }
 
 eZDataType::register( youtube::DATA_TYPE_STRING, 'youtube' );
